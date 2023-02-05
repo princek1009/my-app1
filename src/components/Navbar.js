@@ -18,11 +18,11 @@ function Navbar() {
           </Typography>
           <Box sx={{ width: '100%', padding: 'none'}}>
           <Tabs centered sx={{ padding: 'none'}} className= "{tabs}">
-            <Tab className={"tab-styles"} style={{color: 'black'}} label='Home'/>
-            <Tab className={"tab-styles"} style={{color: 'black'}} label='About'/>
+            <Tab className={"tab-styles"} style={{color: 'black'}} label='Home' value="/" to="/" component={Link} />
+            <Tab className={"tab-styles"} style={{color: 'black'}} label='About Us'/>
             <Tab className={"tab-styles"} style={{color: 'black'}} label='Contact Us'/>
-            <Tab className={"tab-styles"} style={{color: 'black'}} label='Login'/>
-            <Tab className={"tab-styles"} style={{color: 'black'}} label='Sign Up'/>
+            <Tab className={"tab-styles"} style={{color: 'black'}} label='Login' value="/login" to="/login" component={Link}/>
+            <Tab className={"tab-styles"} style={{color: 'black'}} label='Sign Up' value="/signup" to="/signup" component={Link}/>
           </Tabs>
           </Box>
           
